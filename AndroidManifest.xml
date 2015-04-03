@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mohammadag.colouredstatusbar"
+    package="com.vinz243.materialstatusbar"
     android:versionCode="15"
     android:versionName="1.8.9.5" >
 
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.PackageListActivity"
+            android:name=".activities.PackageListActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/per_app_tints_title" >
             <intent-filter>
@@ -27,12 +27,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:label="@string/app_name" />
 
         <activity-alias
             android:name=".MainActivity"
-            android:targetActivity="com.mohammadag.colouredstatusbar.activities.SettingsActivity" >
+            android:targetActivity=".activities.SettingsActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,7 +41,7 @@
         </activity-alias>
 
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.ContributorsActivity"
+            android:name=".activities.ContributorsActivity"
             android:label="@string/contributors" >
             <intent-filter>
                 <action android:name="com.mohammadag.colouredstatusbar.SHOW_CONTRIBUTORS" />
@@ -61,22 +61,22 @@
             android:value="Tint the status bar based on current activity" />
 
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.ApplicationSettings"
+            android:name="com.vinz243.activities.ApplicationSettings"
             android:label="@string/title_activity_applications_settings" >
         </activity>
-        <activity android:name="com.mohammadag.colouredstatusbar.activities.ColorPickerActivity" >
+        <activity android:name=".activities.ColorPickerActivity" >
         </activity>
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.ScreenColorPickerActivity"
+            android:name="com.vinz243.activities.ScreenColorPickerActivity"
             android:exported="true"
             android:launchMode="singleInstance" >
         </activity>
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.ActivitesListActivity"
+            android:name="com.vinz243.activities.ActivitesListActivity"
             android:configChanges="orientation|screenSize" >
         </activity>
         <activity
-            android:name="com.mohammadag.colouredstatusbar.activities.PluginDownloaderActivity"
+            android:name="com.vinz243.activities.PluginDownloaderActivity"
             android:label="@string/title_activity_plugins" >
             <intent-filter>
                 <action android:name="com.mohammadag.colouredstatusbar.DOWNLOAD_PLUGINS" />
@@ -86,7 +86,7 @@
         </activity>
 
         <receiver
-            android:name="com.mohammadag.colouredstatusbar.PackageChangedReceiver"
+            android:name="com.vinz243.PackageChangedReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />

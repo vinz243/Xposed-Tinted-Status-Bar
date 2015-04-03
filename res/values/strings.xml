@@ -2,10 +2,10 @@
 <resources>
 
     <!-- Title / Misc -->
-    <string name="app_name">Tinted Status Bar</string>
-    <string name="app_name_donate_version">Tinted Status Bar (Donate version)</string>
-    <string name="title_activity_applications_settings">Tinted Status Bar Settings</string>
-    <string name="copyright_summary">Copyright © 2013-2014 – Mohammad Abu-Garbeyyeh\nView more apps and modules</string>
+    <string name="app_name">Material Status Bar</string>
+    <string name="app_name_donate_version">Material Status Bar (Donate version)</string>
+    <string name="title_activity_applications_settings">Material Status Bar Settings</string>
+    <string name="copyright_summary">Material Status Bar was originally designed by Mohammad Abu-Garbeyyeh. \n Copyright © 2013-2014 – Mohammad Abu-Garbeyyeh\nView more apps and modules\n Forked and edited by vinz243</string>
     <string name="loading_title">Loading…</string>
     <string name="donate_summary">Support development. Extra features may be unlocked in the future</string>
     <string name="thank_you">Thank you!</string>
@@ -156,5 +156,7 @@
     <string name="uninstall">Uninstall</string>
     <string name="legacy_gradient_mode_title">Legacy gradient mode</string>
     <string name="legacy_gradient_mode_summary">Even when overlay is set to none, draw the gradient when 66000000 is used or when an app is made for KitKat</string>
+    <string name="darker_color_summary">When checked, this will make the status bar\'s color darker than the toolbar, as seen in Lollipop</string>
+    <string name="darker_color_title"> Material Color Darkening</string>
 
 </resources>

@@ -31,11 +31,11 @@
         <PreferenceScreen
             android:summary="@string/default_settings_summary"
             android:title="@string/default_settings_title" >
-            <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+            <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
                 android:key="pref_link_panel_view_colors"
                 android:summary="@string/link_panel_views_summary"
                 android:title="@string/link_panel_views_title" />
-            <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+            <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
                 android:defaultValue="true"
                 android:key="pref_respect_kitkat_api"
                 android:summary="@string/respect_kitkat_api_summary"
@@ -44,31 +44,31 @@
             <PreferenceCategory
                 android:summary="@string/default_colors_summary"
                 android:title="@string/default_colors" >
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_status_bar_tint"
                     android:summary="@string/default_summary"
                     android:title="@string/default_status_bar_tint_title" />
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_status_bar_icon_tint"
                     android:summary="@string/default_summary"
                     android:title="@string/default_status_bar_icon_tint_title" />
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_status_bar_inverted_icon_tint"
                     android:summary="@string/default_status_bar_inverted_icon_tint_summary"
                     android:title="@string/default_status_bar_inverted_icon_tint_title" />
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_nav_bar_tint"
                     android:summary="@string/default_summary"
                     android:title="@string/default_navigation_bar_tint_title" />
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_nav_bar_icon_tint"
                     android:summary="@string/default_summary"
                     android:title="@string/default_navigation_bar_icon_tint_title" />
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_nav_bar_im_tint"
                     android:summary="@string/default_summary_keyboard"
                     android:title="@string/default_navigation_bar_im_tint_title" />
-                <com.mohammadag.colouredstatusbar.preferences.ColorPreference
+                <com.vinz243.materialstatusbar.preferences.ColorPreference
                     android:key="pref_default_nav_bar_icon_im_tint"
                     android:summary="@string/default_summary_keyboard"
                     android:title="@string/default_navigation_bar_icon_im_tint_title" />
@@ -76,7 +76,13 @@
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/appearance" >
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_darker_color"
+            android:summary="@string/darker_color_summary"
+            android:title="@string/darker_color_title" />
+
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:defaultValue="true"
             android:key="pref_animate_tint"
             android:summary="@string/animate_tint_summary"
@@ -90,7 +96,7 @@
             android:summary="@string/overlay_mode_summary"
             android:title="@string/overlay_mode_title" />
 
-        <com.mohammadag.colouredstatusbar.preferences.SliderPreference
+        <com.vinz243.materialstatusbar.preferences.SliderPreference
             android:defaultValue="0.2"
             android:enabled="false"
             android:key="pref_semi_transparent_overlay_opacity"
@@ -102,50 +108,50 @@
             android:summary="@string/legacy_gradient_mode_summary"
             android:title="@string/legacy_gradient_mode_title" />
 
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:key="pref_white_icon_tint_with_overlay"
             android:summary="@string/white_icon_tint_with_overlay_message"
             android:title="@string/white_icon_tint_with_overlay_title" />
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:key="pref_react_lights_out"
             android:summary="@string/react_lightsout_summary"
             android:title="@string/react_lightsout_title" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/action_bar" >
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:defaultValue="false"
             android:key="pref_awesome_ab_color_picker"
             android:summary="@string/awesome_ab_color_picker_summary"
             android:title="@string/awesome_ab_color_picker_title" />
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:defaultValue="true"
             android:key="pref_react_action_bar_visibility"
             android:summary="@string/react_actionbar_description"
             android:title="@string/react_actionbar_title" />
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:key="pref_reverse_tint_action_bar"
             android:summary="@string/reverse_tint_actionbar_summary"
             android:title="@string/reverse_tint_actionbar_title" />
     </PreferenceCategory>
 
-    <com.mohammadag.colouredstatusbar.preferences.SliderPreference
+    <com.vinz243.materialstatusbar.preferences.SliderPreference
         android:defaultValue="0.7"
         android:key="pref_max_hsv_value_before_using_black_icons"
         android:summary="@string/max_hsv_summary"
         android:title="@string/max_hsv_title" />
 
     <PreferenceCategory android:title="@string/advanced" >
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:defaultValue="true"
             android:key="pref_allow_api_usage"
             android:summary="@string/api_override_summary"
             android:title="@string/api_override_title" />
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:defaultValue="false"
             android:key="pref_toast_activity_names"
             android:summary="@string/toast_activity_names_summary"
             android:title="@string/toast_activity_names_title" />
-        <com.mohammadag.colouredstatusbar.preferences.MultiLineCheckBoxPreference
+        <com.vinz243.materialstatusbar.preferences.MultiLineCheckBoxPreference
             android:key="pref_debug_mode"
             android:summary="@string/debug_mode_summary"
             android:title="@string/debug_mode_title" />
