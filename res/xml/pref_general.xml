@@ -9,7 +9,7 @@
         android:key="contributors"
         android:summary="@string/contributors_summary"
         android:title="@string/contributors" >
-        <intent android:action="com.mohammadag.colouredstatusbar.SHOW_CONTRIBUTORS" />
+        <intent android:action="com.vinz243.materialstatusbar.SHOW_CONTRIBUTORS" />
     </Preference>
     <Preference
         android:key="donate_key"
@@ -18,14 +18,14 @@
     <Preference
         android:summary="@string/plugins_summary"
         android:title="@string/plugins_title" >
-        <intent android:action="com.mohammadag.colouredstatusbar.DOWNLOAD_PLUGINS" />
+        <intent android:action="com.vinz243.materialstatusbar.DOWNLOAD_PLUGINS" />
     </Preference>
 
     <PreferenceCategory android:title="@string/per_app_settings" >
         <Preference
             android:summary="@string/per_app_tints_summary"
             android:title="@string/per_app_tints_title" >
-            <intent android:action="com.mohammadag.colouredstatusbar.PER_APP_SETTINGS" />
+            <intent android:action="com.vinz243.materialstatusbar.PER_APP_SETTINGS" />
         </Preference>
 
         <PreferenceScreen
